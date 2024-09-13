@@ -1,0 +1,69 @@
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+  }
+
+.formcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+form{
+    color:#fff;
+    margin: 1px solid black;
+    padding: 5rem;
+    background-color: rgba(0, 0, 0, .5);
+    border: 2px solid white;
+    border-radius: 3rem;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacio entre cada input */
+  }
+
+  .form-group p {
+    margin: 1rem;
+    font-size: 20px;
+  }
+
+  .enviar{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .enviar button{
+    background: rgb(93, 149, 206, .6);
+    border: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+  }
+
+  button:hover{
+    background: rgb(93, 149, 206, .8);
+    color: #fff;
+  }
+
+  .contactos{
+    color: rgb(255, 255, 255);
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 45px;
+    background: rgba(0, 0, 0, .4);
+    border-radius: 100rem;
+  }

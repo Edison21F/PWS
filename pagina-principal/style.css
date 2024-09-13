@@ -1,0 +1,352 @@
+@import url("https://fonts.googlapis.com/css2?familiy=Poppins:wght@300;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background: url('galaxia-en-el-espacio_3840x2160_xtrafondos.com.jpg');
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background: rgb(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+
+
+.logo {
+    font-size: 2rem;
+    color: rgb(93, 149, 206, .9);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+
+}
+
+.icons {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    right: 5%;
+    position: absolute;
+    
+}
+
+#check{
+    display: none;
+}
+
+
+.acerca-de-mi {
+    color: #fff;
+    margin: 50px;
+    align-items: center;
+    display: block;
+    justify-content: center;
+
+}
+
+.acerca-de-mi h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: none;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.cuadro1 {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, .9);
+    border-radius: 30px;
+    font-size: 30px;
+    margin: 2rem;
+}
+
+.foto img {
+    width: 70%;
+    border-radius: 30px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+
+.carrusel {
+    color: #fff;
+    display: flexbox;
+    justify-content: center;
+}
+
+.carrusel h2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.carrusel img {
+    width: 100%;
+    border-radius: 5rem;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0, .1);
+}
+
+
+.trabajos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #fff;
+    padding: 1rem;
+}
+
+
+.trabajos .contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(50%);
+    border-radius: 15px;
+}
+
+.trabajos .contenedor img {
+    width: 100%;
+}
+
+
+.contenedor h1 {
+    color: cadetblue;
+}
+
+.contenedor a {
+    color: rgb(41, 250, 250);
+    padding: 3px;
+    display: flex;
+    background-color: rgba(0, 0, 0, .8);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+
+}
+
+.titulo1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+}
+
+footer {
+    color: #fff;
+    align-content: center;
+    display: block;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 30px;
+}
+
+footer .vinculos {
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+
+}
+
+.vinculos img {
+    width: 100px;
+    border-radius: 30px;
+
+}
+
+.contenedor-frase{
+    padding: 3rem;
+    border: 2px solid #fff;
+    border-radius: 4rem;
+    margin: 1rem;
+}
+
+ .boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-generar{
+    background: rgba(72, 223, 203, 0.6);
+    color: #fff;
+    border: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.btn-generar:hover{
+    background: rgba(19, 114, 101, 0.6);
+    color: #fff;
+    border: 3rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+
+.frase{
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 3rem;
+    backdrop-filter: blur(50px);
+
+}
+.frase p{
+    font-size: 25px;
+    text-align: center;
+}
+@media(max-width: 768px) {
+
+    .trabajos {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .trabajos .contenedor {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, .4);
+        backdrop-filter: blur(50%);
+        border-radius: 9px;
+        margin: 0 0 1rem;
+    }
+
+    .vinculos img {
+        width: 70px;
+        border-radius: 15px;
+    }
+    footer{
+        margin: 0 0 1rem;
+    }
+
+    .carrusel img {
+        width: 100%;
+        border-radius: 2rem;
+        padding: 1rem;
+        background-color: rgb(0, 0, 0, .1);
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    .acerca-de-mi h1 {
+
+        font-size: 30px;
+        padding: 2rem;
+
+    }
+
+    .info {
+        display: block;
+    }
+
+    .cuadro1 {
+        padding: 1rem;
+        margin: 0%;
+        border-radius: 20px;
+        font-size: 30px;
+        width: 100%;
+        margin: 0 0 1rem;
+    }
+    
+
+    .foto img {
+        width: 100%;
+
+    }
+
+    .icons {
+        display: block;
+        right: 10%;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    #check:checked~nav {
+        height: 17.7rem;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+       height: 0;
+        background: rgba(0, 0, 0, 1);
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+        transition: .3s ease;
+        overflow: hidden;
+
+    }
+
+
+    nav a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+    }
+
+    #check:checked~nav a {
+        transform: translateY(0);
+    }
+    }
+
